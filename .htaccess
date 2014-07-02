@@ -1,0 +1,9 @@
+# 制限コンテンツ化する拡張子
+<Files ~ "\.(###EXT1##)$">
+#AddType application/x-httpd-php .jpg
+###EXT2###
+</Files>
+
+#php_value auto_prepend_file "auth_check.php"
+#php_value auto_prepend_file "Auth.php"
+
