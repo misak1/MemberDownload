@@ -1,0 +1,12 @@
+# 制限コンテンツ化する拡張子
+<Files ~ “\.(jpg|pdf|doc|csv)$”>
+AddType application/x-httpd-php .jpg
+AddType application/x-httpd-php .csv
+AddType application/x-httpd-php .doc
+AddType application/x-httpd-php .pdf
+</Files>
+
+#php_value auto_prepend_file "auth_check.php"
+#php_value auto_prepend_file "Auth.php"
+php_value auto_prepend_file "session_check.php"
+
